@@ -9,14 +9,14 @@ makepkg -si
 echo -e "\e[31mInstalling Hyprland...\e[0m"
 sudo pacman -S hyprland
 
-echo -e "\e[31mInstalling Hyprland ecosystem dependencies...\e[0m"
-yay -S aquamarine hyprlang hyprcursor hyprutils hyprgraphics
+echo -e "\e[31mInstalling Hyprland ecosystem...\e[0m"
+yay -S aquamarine hyprlang hyprcursor bibata-cursor-theme hyprutils hyprgraphics --sudoloop --noconfirm
 
 echo -e "\e[31mInstalling must-have software...\e[0m"
-yay -S mako kitty neovim btop tlp xorg-server hyprpolkitagent qt5-wayland qt6-wayland hyprpicker hypridle hyprlock hyprsysteminfo hyprland-qt-support hyprland-qt-support
+yay -S mako kitty swww pywal-git clipse walker fastfetch dolphin superfile waybar brightnessctl playerctl neovim btop tlp xorg-server hyprpolkitagent qt5-wayland qt6-wayland hyprpicker hypridle hyprlock hyprsysteminfo hyprland-qt-support hyprland-qt-support
 
 echo -e "\e[31mInstalling audio software...\e[0m"
-yay -S pipewire wireplumber pipewire-jack easyeffects
+yay -S pipewire wireplumber pipewire-jack easyeffects --sudoloop --noconfirm
 
 echo -e "\e[31mInstalling Zsh...\e[0m"
 yay -S zsh
@@ -28,5 +28,5 @@ echo -e "\e[31mInstalling brew...\e[0m"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 echo -e "\e[31mInstalling misc dotfiles from cooperbousum/dotfiles using chezmoi...\e[0m"
-yay -S chezmoi
+yay -S chezmoi --sudoloop --noconfirm
 chezmoi init --apply https://github.com/cooperbousum/dotfiles.git

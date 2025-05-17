@@ -57,5 +57,5 @@ echo # (optional) move to a new line
 if [[ $REPLY =~ ^[Yy]$ ]]; then
   yay -S greetd --sudoloop --noconfirm
   systemctl enable greetd
-  cp config.toml /etc/greetd
+  sudo cp config.toml /etc/greetd
 fi

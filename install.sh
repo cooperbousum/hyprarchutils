@@ -21,16 +21,16 @@ echo -e "\e[31mInstalling Hyprland ecosystem...\e[0m"
 yay -S aquamarine hyprlang hyprcursor bibata-cursor-theme hyprutils hyprgraphics --sudoloop --noconfirm
 
 echo -e "\e[31mInstalling must-have software...\e[0m"
-yay -S mako kitty clipse walker fastfetch dolphin superfile-bin waybar jq socat brightnessctl playerctl neovim btop tlp xorg-server hyprpolkitagent qt5-wayland qt6-wayland hyprpicker hypridle hyprlock hyprsysteminfo hyprland-qt-support hyprland-qt-support --sudoloop --noconfirm
+yay -S mako kitty clipse walker fastfetch dolphin superfile-bin waybar jq socat brightnessctl playerctl neovim btop tlp xorg-server hyprpolkitagent qt5-wayland qt6-wayland hyprpicker hypridle hyprlock hyprsysteminfo hyprland-qt-support --sudoloop --noconfirm
 
 echo -e "\e[31mInstalling audio software...\e[0m"
 yay -S pipewire wireplumber pipewire-jack easyeffects --sudoloop --noconfirm
 
-echo -e "\e[31mInstalling Zsh...\e[0m"
+echo -e "\e[31mInstalling Zsh + Oh My Posh...\e[0m"
 yay -S zsh
 chsh -s $(which zsh)
 echo -e "\e[31m$($SHELL --version) installed\e[0m"
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+curl -s https://ohmyposh.dev/install.sh | bash -s
 
 echo -e "\e[31mInstalling brew...\e[0m"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"

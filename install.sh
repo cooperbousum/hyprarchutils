@@ -46,10 +46,10 @@ wal -f $utilpath/ayu-mirage.json
 fontpath=/usr/share/fonts
 echo -e "\e[31mInstalling fonts for waybar and hyprlock\e[0m"
 mkdir $fontpath
-mkdir $fontpath/OTF
-mkdir $fontpath/TTF
-cp ~/hyprarchutils/istok-web.bold.ttf $fontpath/TTF
-cp ~/hyprarchutils/SFMono-Bold.otf $fontpath/OTF
+sudo mkdir $fontpath/OTF
+sudo mkdir $fontpath/TTF
+sudo cp ~/hyprarchutils/istok-web.bold.ttf $fontpath/TTF
+sudo cp ~/hyprarchutils/SFMono-Bold.otf $fontpath/OTF
 
 echo -e "\e[31mDo you want to set up agreety with autologin to use hyprlock as a DE? Be sure that you have set the user in hyprachutils/confit.toml before running this. (y/n)\e[0m"
 read -n 1 -r

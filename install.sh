@@ -21,7 +21,7 @@ echo -e "\e[31mInstalling Hyprland ecosystem...\e[0m"
 yay -S aquamarine hyprlang hyprcursor bibata-cursor-theme hyprutils hyprgraphics --sudoloop --noconfirm
 
 echo -e "\e[31mInstalling must-have software...\e[0m"
-yay -S mako kitty clipse walker fastfetch dolphin superfile-bin waybar jq socat brightnessctl playerctl neovim btop tlp xorg-server hyprpolkitagent qt5-wayland qt6-wayland hyprpicker hypridle hyprlock hyprsysteminfo hyprland-qt-support --sudoloop --noconfirm
+yay -S mako kitty clipse walker fastfetch dolphin superfile-bin waybar jq socat brightnessctl playerctl neovim btop tlp xorg-server hyprpolkitagent qt5-wayland qt6-wayland hyprpicker hypridle hyprlock hyprland-qt-support --sudoloop --noconfirm
 
 echo -e "\e[31mInstalling audio software...\e[0m"
 yay -S pipewire wireplumber pipewire-jack easyeffects --sudoloop --noconfirm

@@ -51,7 +51,7 @@ sudo mkdir $fontpath/TTF
 sudo cp ~/hyprarchutils/istok-web.bold.ttf $fontpath/TTF
 sudo cp ~/hyprarchutils/SFMono-Bold.otf $fontpath/OTF
 
-echo -e "\e[31mDo you want to set up agreety with autologin to use hyprlock as a DE? Be sure that you have set the user in hyprachutils/confit.toml before running this. (y/n)\e[0m"
+echo -e "\e[31mDo you want to set up agreety with autologin to use hyprlock as a DE? Be sure that you have set the user in hyprachutils/config.toml before running this. (y/n)\e[0m"
 read -n 1 -r
 echo # (optional) move to a new line
 if [[ $REPLY =~ ^[Yy]$ ]]; then
